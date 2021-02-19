@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="weather-app">
+        <div class="container">
+
+
+            <h1 id="city">
+                London, UK
+
+
+                </br>
+                London, UK
+                </br>
+
+
+            </h1>
+            <h2>
+                <h2 id="date">
+                    <h2 id="description">
+                        <span class="temperature" id="temperature">2</span><span class="units">
+                            <a href="#" id="celcius-link">°C</a> |
+                            <a href="#" id="fahrenheit-link">°F</a>
+
+                        </span>
+                    </h2>
+                    </br>
+
+                    <form class="search-form" id="search-form">
+                        <input type="text" placeholder="Enter city..." class="search-bar" id="city-input" />
+                        <input type="submit" value="Search" class="submit-button" />
+                    </form>
+                    </br>
+                    <div>
+                        <button class="btn btn-success w-40" id="current-location-button">
+                            Current
+                        </button>
+
+                    </div>
+                    </br>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather03-256.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Morning</h5>
+                                    <p class="card-text">Sunny intervals with a gentle breeze.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather01-256.png"
+                                    class="card-img-top
+" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Afternoon</h5>
+                                    <p class="card-text">Clear skies with a gentle breeze</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather10-256.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tonight</h5>
+                                    <p class="card-text">Crisp and chilly.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    <script src="src/index.js">
+    </script>
+
+</body>
+
+</html>
